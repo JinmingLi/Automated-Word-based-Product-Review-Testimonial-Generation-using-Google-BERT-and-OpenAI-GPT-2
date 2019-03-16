@@ -1,5 +1,5 @@
 <h2><center>Cognitive Computing Final Project</center></h2>
-<h3><center>Automated Word-based Product Review/Testimonial Generation using Google BERT and OpenAI GPT-2</center></h3>
+<h4><center>Automated Word-based Product Review/Testimonial Generation using Google BERT and OpenAI GPT-2</center></h3>
 <h4><center>Jinming Li, Tianxin Huang, Qin Shan, Guanhua Zhang</center></h4>
 <h4><center>Master of Science in Business Analytics, The University of Texas at Austin</center></h4>
 
@@ -85,7 +85,7 @@ warnings.filterwarnings('ignore')
 
 The main model we are going to use is GAN. GAN stands for generative adversarial networks. It comprises of two nets: a generator net and a discriminator net. GAN is genreative because the generator can create fake inputs for the discriminator. It's adversarial becasue the generator and the discriminator are fighting one against the other. You can think of the generator as a spammer. It takes random noise as input and output a fake review. The discriminator acts like a police. It takes both the real reviews from the training set and the fake review outputs from the generator, and learns to classify whether the review is fake or real.
 
-<img src = 'GAN.png' height = 500 width = 500>
+<img src = 'GAN.png' height = 400 width = 600>
 
 - **BERT** (<b>B</b>idirectional <b>E</b>ncoder <b>R</b>epresentations from <b>T</b>ransformers: <b>BERT</b>)
 
@@ -93,7 +93,7 @@ BERT takes an input with length up to 512. The input starts with a special token
 
 You might be thinking why we are choose BERT-base rather than BERT-large. BERT large is a larger and more powerful pretrained model than BERT base as the name suggested. The reason we choose BERT base over BERT large is for fine-tunning purpose. In order to train BERT large, we need a TPU. However, we only have a GPU with a RAM of 16 GB. Therefore, BERT base is a more feasible choice for this project.
 
-<img src = 'BERT.png' height = 500 width = 500>
+<img src = 'BERT.png' height = 400 width = 600>
 
 - **OpenAI GPT-2** (<b>G</b>enerative <b>P</b>re-<b>T</b>raining version <b>2</b>)
 
@@ -101,7 +101,7 @@ GPT-2 is a state-of-the-art language model designed to improve on the realism an
 
 Github developer Hugging Face has updated its repository with a PyTorch reimplementation of the GPT-2 language model small version that OpenAI open-sourced last week, along with pretrained models and fine-tuning examples. Here, we mainly used the source code from Hugging Face's pytorch_pretrained_bert library and built our generator model with a language head model on top of the base GPT-2 model. We only needs to train 148 weights for transfer learning in this case.
 
-<img src = 'GPT2.png' height = 800 width = 500>
+<center><img src = 'GPT2.png' height = 300 width = 600><center>
 
 <h4>2) Model Architecture</h4>
 
