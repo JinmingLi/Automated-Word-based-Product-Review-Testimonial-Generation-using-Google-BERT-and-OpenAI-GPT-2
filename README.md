@@ -85,7 +85,7 @@ warnings.filterwarnings('ignore')
 
 The main model we are going to use is GAN. GAN stands for generative adversarial networks. It comprises of two nets: a generator net and a discriminator net. GAN is genreative because the generator can create fake inputs for the discriminator. It's adversarial becasue the generator and the discriminator are fighting one against the other. You can think of the generator as a spammer. It takes random noise as input and output a fake review. The discriminator acts like a police. It takes both the real reviews from the training set and the fake review outputs from the generator, and learns to classify whether the review is fake or real.
 
-<img src = 'GAN.png' height = 400 width = 600>
+<img src = 'GAN.png' height = 300 width = 600>
 
 - **BERT** (<b>B</b>idirectional <b>E</b>ncoder <b>R</b>epresentations from <b>T</b>ransformers: <b>BERT</b>)
 
@@ -4281,13 +4281,13 @@ if __name__ == '__main__':
 <h3>Part 3: Generated & Real Review Comparison</h3>
 
 - **Epoch 200:**
-<center><img src = 'epoch200.png' height = '500' width = '500'></center>
+<center><img src = 'epoch200.png' height = '400' width = '600'></center>
 
 - **Epoch 400:**
-<center><img src = 'epoch400.png' height = '500' width = '500'></center>
+<center><img src = 'epoch400.png' height = '400' width = '600'></center>
 
 - **Epoch 800:**
-<center><img src = 'epoch800.png' height = '500' width = '500'></center>
+<center><img src = 'epoch800.png' height = '400' width = '600'></center>
 
 
 ```python
