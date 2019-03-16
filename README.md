@@ -1,7 +1,7 @@
 <h2><center>Cognitive Computing Final Project</center></h2>
 <h4><center>Automated Word-based Product Review/Testimonial Generation using Google BERT and OpenAI GPT-2</center></h3>
-<h4><center>Jinming Li, Tianxin Huang, Qin Shan, Guanhua Zhang</center></h4>
-<h4><center>Master of Science in Business Analytics, The University of Texas at Austin</center></h4>
+<h5><center>Jinming Li, Tianxin Huang, Qin Shan, Guanhua Zhang</center></h5>
+<h5><center>Master of Science in Business Analytics, The University of Texas at Austin</center></h5>
 
 ---
 
